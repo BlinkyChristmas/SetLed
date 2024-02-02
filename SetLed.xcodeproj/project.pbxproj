@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		5633CC002B6D08F5008EE082 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5633CBFF2B6D08F5008EE082 /* main.cpp */; };
+		5633CC172B6D09A2008EE082 /* buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5633CC112B6D0996008EE082 /* buffer.cpp */; };
+		5633CC182B6D09A2008EE082 /* mapfile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5633CC122B6D0996008EE082 /* mapfile.cpp */; };
+		5633CC192B6D09A2008EE082 /* timeutil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5633CC102B6D0996008EE082 /* timeutil.cpp */; };
+		5633CC1C2B6D09B6008EE082 /* StatusController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5633CC1B2B6D09B6008EE082 /* StatusController.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +29,22 @@
 /* Begin PBXFileReference section */
 		5633CBFC2B6D08F5008EE082 /* SetLed */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SetLed; sourceTree = BUILT_PRODUCTS_DIR; };
 		5633CBFF2B6D08F5008EE082 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		5633CC062B6D0996008EE082 /* CMakeLists.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		5633CC072B6D0996008EE082 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		5633CC082B6D0996008EE082 /* AUTHORS */ = {isa = PBXFileReference; lastKnownFileType = text; path = AUTHORS; sourceTree = "<group>"; };
+		5633CC092B6D0996008EE082 /* BUILDING.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = BUILDING.txt; sourceTree = "<group>"; };
+		5633CC0B2B6D0996008EE082 /* client.cfg */ = {isa = PBXFileReference; lastKnownFileType = text; path = client.cfg; sourceTree = "<group>"; };
+		5633CC0C2B6D0996008EE082 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		5633CC0F2B6D0996008EE082 /* mapfile.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = mapfile.hpp; sourceTree = "<group>"; };
+		5633CC102B6D0996008EE082 /* timeutil.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = timeutil.cpp; sourceTree = "<group>"; };
+		5633CC112B6D0996008EE082 /* buffer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = buffer.cpp; sourceTree = "<group>"; };
+		5633CC122B6D0996008EE082 /* mapfile.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = mapfile.cpp; sourceTree = "<group>"; };
+		5633CC132B6D0996008EE082 /* timeutil.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = timeutil.hpp; sourceTree = "<group>"; };
+		5633CC142B6D0996008EE082 /* strutil.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = strutil.hpp; sourceTree = "<group>"; };
+		5633CC152B6D0996008EE082 /* dbgutil.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = dbgutil.hpp; sourceTree = "<group>"; };
+		5633CC162B6D0996008EE082 /* buffer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = buffer.hpp; sourceTree = "<group>"; };
+		5633CC1A2B6D09B6008EE082 /* StatusController.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = StatusController.hpp; sourceTree = "<group>"; };
+		5633CC1B2B6D09B6008EE082 /* StatusController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StatusController.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +61,13 @@
 		5633CBF32B6D08F5008EE082 = {
 			isa = PBXGroup;
 			children = (
+				5633CC072B6D0996008EE082 /* .gitignore */,
+				5633CC082B6D0996008EE082 /* AUTHORS */,
+				5633CC092B6D0996008EE082 /* BUILDING.txt */,
+				5633CC062B6D0996008EE082 /* CMakeLists.txt */,
+				5633CC0D2B6D0996008EE082 /* common */,
+				5633CC0A2B6D0996008EE082 /* examples */,
+				5633CC0C2B6D0996008EE082 /* LICENSE */,
 				5633CBFE2B6D08F5008EE082 /* SetLed */,
 				5633CBFD2B6D08F5008EE082 /* Products */,
 			);
@@ -57,9 +84,42 @@
 		5633CBFE2B6D08F5008EE082 /* SetLed */ = {
 			isa = PBXGroup;
 			children = (
+				5633CC1B2B6D09B6008EE082 /* StatusController.cpp */,
+				5633CC1A2B6D09B6008EE082 /* StatusController.hpp */,
 				5633CBFF2B6D08F5008EE082 /* main.cpp */,
 			);
 			path = SetLed;
+			sourceTree = "<group>";
+		};
+		5633CC0A2B6D0996008EE082 /* examples */ = {
+			isa = PBXGroup;
+			children = (
+				5633CC0B2B6D0996008EE082 /* client.cfg */,
+			);
+			path = examples;
+			sourceTree = "<group>";
+		};
+		5633CC0D2B6D0996008EE082 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				5633CC0E2B6D0996008EE082 /* utility */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		5633CC0E2B6D0996008EE082 /* utility */ = {
+			isa = PBXGroup;
+			children = (
+				5633CC0F2B6D0996008EE082 /* mapfile.hpp */,
+				5633CC102B6D0996008EE082 /* timeutil.cpp */,
+				5633CC112B6D0996008EE082 /* buffer.cpp */,
+				5633CC122B6D0996008EE082 /* mapfile.cpp */,
+				5633CC132B6D0996008EE082 /* timeutil.hpp */,
+				5633CC142B6D0996008EE082 /* strutil.hpp */,
+				5633CC152B6D0996008EE082 /* dbgutil.hpp */,
+				5633CC162B6D0996008EE082 /* buffer.hpp */,
+			);
+			path = utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,6 +150,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1520;
+				ORGANIZATIONNAME = "Charles Kerr";
 				TargetAttributes = {
 					5633CBFB2B6D08F5008EE082 = {
 						CreatedOnToolsVersion = 15.2;
@@ -120,6 +181,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5633CC002B6D08F5008EE082 /* main.cpp in Sources */,
+				5633CC182B6D09A2008EE082 /* mapfile.cpp in Sources */,
+				5633CC192B6D09A2008EE082 /* timeutil.cpp in Sources */,
+				5633CC1C2B6D09B6008EE082 /* StatusController.cpp in Sources */,
+				5633CC172B6D09A2008EE082 /* buffer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,6 +249,10 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = (
+					$PROJECT_DIR/SetLed,
+					$PROJECT_DIR/common,
+				);
 			};
 			name = Debug;
 		};
@@ -238,6 +307,10 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = (
+					$PROJECT_DIR/SetLed,
+					$PROJECT_DIR/common,
+				);
 			};
 			name = Release;
 		};

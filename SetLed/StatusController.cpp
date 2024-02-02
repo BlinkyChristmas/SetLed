@@ -68,7 +68,7 @@ auto LEDInfo::stateNameFor(ledstate state) -> const std::string {
 
 
 //======================================================================
-auto StatusController::setBrightness(LEDInfo::ledtype led, LEDInfo::ledstate state) -> bool {
+auto StatusController::setTrigger(LEDInfo::ledtype led, LEDInfo::ledstate state) -> bool {
     auto value = "none"s ;
     if (state == LEDInfo::FLASH) {
         value = "timer"s ;
@@ -84,7 +84,7 @@ auto StatusController::setBrightness(LEDInfo::ledtype led, LEDInfo::ledstate sta
     return true ;
 }
 //======================================================================
-auto StatusController::setTrigger(LEDInfo::ledtype led, LEDInfo::ledstate state) -> bool {
+auto StatusController::setBrightness(LEDInfo::ledtype led, LEDInfo::ledstate state) -> bool {
     auto value = "1"s ;
     if (state == LEDInfo::OFF) {
         value = "0"s ;

@@ -71,8 +71,8 @@ else()
 
         if (BEAGLE)
             target_compile_definitions(SetLed PRIVATE
-                BEAGLE
-                STATUSLED
+                BEAGLE=1
+                STATUSLED=1
             )
         endif (BEAGLE)
     
